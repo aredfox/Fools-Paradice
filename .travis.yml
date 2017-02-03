@@ -2,5 +2,5 @@ language: csharp
 solution: Source/FoolsParadice.sln
 install:
   - nuget restore Source/FoolsParadice.sln
- script:
+script:
   - xbuild /p:Configuration=Release Source/FoolsParadice.sln
