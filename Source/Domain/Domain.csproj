@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Die.cs" />
-    <Compile Include="DieFace.cs" />
-    <Compile Include="DieFaceGrids.cs" />
+    <Compile Include="Dice\Die.cs" />
+    <Compile Include="Dice\DieFace.cs" />
+    <Compile Include="Dice\DieFaceGrids.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="_ShareInternals.cs" />
+    <Compile Include="Properties\_ShareInternals.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

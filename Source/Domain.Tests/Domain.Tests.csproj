@@ -59,8 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DieFaceTests.cs" />
-    <Compile Include="DieTests.cs" />
+    <Compile Include="Dice\DieFaceTests.cs" />
+    <Compile Include="Dice\DieTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
