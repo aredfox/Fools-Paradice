@@ -6,7 +6,7 @@
             min: min,
             max: max,
             options: new OperateOnNumbersAlgorithmOptions(
-                numberSelectorFunction: i => i % 2 != 0,
+                numberSelectorFunction: die => die.Value % 2 != 0,
                 operatorFunction: Operators.Subtract
             )
         ) { }

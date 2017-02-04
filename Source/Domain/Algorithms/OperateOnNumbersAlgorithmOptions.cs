@@ -13,22 +13,22 @@ namespace Domain.Algorithms
         /// <summary>
         /// Number selector function, defaults to returning all numbers.
         /// </summary>
-        public Func<int, bool> NumberSelector { get; } =
+        public Func<Die, bool> NumberSelector { get; } =
             i => true;
 
 
         /// <summary>
         /// The operator function, defaults to <see cref="Operators.Add"/>.
         /// </summary>
-        public Func<int[], int> Operator { get; }
+        public Func<Die[], int> Operator { get; }
             = Operators.Add;
 
         /// <summary>
         /// Create a new options object.
         /// </summary>
         public OperateOnNumbersAlgorithmOptions(
-            Func<int, bool> numberSelectorFunction = null,
-            Func<int[], int> operatorFunction = null) {
+            Func<Die, bool> numberSelectorFunction = null,
+            Func<Die[], int> operatorFunction = null) {
             if (numberSelectorFunction != null) {
                 NumberSelector = numberSelectorFunction;
             }

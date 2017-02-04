@@ -22,8 +22,7 @@ namespace Domain.Algorithms
             return new AlgorithmResult<int>(
                 Options.Operator(
                     dice
-                    .Where(die => Options.NumberSelector(die.Value))
-                    .Select(die => die.Value)
+                    .Where(die => Options.NumberSelector(die))
                     .ToArray()
                 )
             );
