@@ -51,6 +51,8 @@
     <Compile Include="Algorithms\AlgorithmErrorResult.cs" />
     <Compile Include="Algorithms\AlgorithmResult.cs" />
     <Compile Include="Algorithms\Implementations\OperateOnNumbers\AddEvenNumbersAlgorithm.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\AddNumbersAroundCenterDotAlgorithm.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\AddNumbersWithCenterDotAlgorithm.cs" />
     <Compile Include="Algorithms\Implementations\OperateOnNumbers\AddOddNumbersAlgorithm.cs" />
     <Compile Include="Algorithms\Implementations\OperateOnNumbers\LowestNumberAlgorithm.cs" />
     <Compile Include="Algorithms\OperateOnNumbersAlgorithm.cs" />

@@ -23,6 +23,7 @@ namespace Domain.Algorithms
                 Options.Operator(
                     dice
                     .Where(die => Options.NumberSelector(die))
+                    .Select(die => Options.NumberTransformer(die))
                     .ToArray()
                 )
             );

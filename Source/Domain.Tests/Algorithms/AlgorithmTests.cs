@@ -42,9 +42,9 @@ namespace Domain.Tests.Algorithms
             var sut = new TestInt32Algorithm();
             var actual = sut.Execute(null);
             // Assert
-            Assert.Equal(expected.Value, actual.Value);
-            Assert.Equal(expected.HasError, actual.HasError);
-            Assert.Equal(expected.ErrorMessage, actual.ErrorMessage);
+            Assert.Equal(actual.Value, expected.Value);
+            Assert.Equal(actual.HasError, expected.HasError);
+            Assert.Equal(actual.ErrorMessage, expected.ErrorMessage);
         }
 
         [Fact]
@@ -55,9 +55,9 @@ namespace Domain.Tests.Algorithms
             var sut = new TestInt32Algorithm(1, 1);
             var actual = sut.Execute(new Die[] { new Die(), new Die() });
             // Assert
-            Assert.Equal(expected.Value, actual.Value);
-            Assert.Equal(expected.HasError, actual.HasError);
-            Assert.Equal(expected.ErrorMessage, actual.ErrorMessage);
+            Assert.Equal(actual.Value, expected.Value);
+            Assert.Equal(actual.HasError, expected.HasError);
+            Assert.Equal(actual.ErrorMessage, expected.ErrorMessage);
         }
 
         [Fact]
@@ -68,9 +68,9 @@ namespace Domain.Tests.Algorithms
             var sut = new TestInt32Algorithm(1, 1);
             var actual = sut.Execute(new Die[] { new Die() });
             // Assert
-            Assert.Equal(expected.Value, actual.Value);
-            Assert.Equal(expected.HasError, actual.HasError);
-            Assert.Equal(expected.ErrorMessage, actual.ErrorMessage);
+            Assert.Equal(actual.Value, expected.Value);
+            Assert.Equal(actual.HasError, expected.HasError);
+            Assert.Equal(actual.ErrorMessage, expected.ErrorMessage);
         }
     }
 }

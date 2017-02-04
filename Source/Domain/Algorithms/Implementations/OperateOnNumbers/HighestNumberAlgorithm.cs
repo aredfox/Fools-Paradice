@@ -11,7 +11,7 @@ namespace Domain.Algorithms.Implementations.OperateOnNumbers
             min: min,
             max: max,
             options: new OperateOnNumbersAlgorithmOptions(
-                operatorFunction: input => input.Max(die => die.Value)
+                operatorFunction: input => input.Max()
             )
         ) { }
     }

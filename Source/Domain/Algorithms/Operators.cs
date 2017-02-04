@@ -8,13 +8,13 @@ namespace Domain.Algorithms
         /// <summary>
         /// Adds all integers.
         /// </summary>
-        public static Func<Die[], int> Add { get; }
-            = input => input.Sum(die => die.Value);
+        public static Func<int[], int> Add { get; }
+            = input => input.Sum(i => i);
 
         /// <summary>
         /// Substracts all integeters.
         /// </summary>
-        public static Func<Die[], int> Subtract { get; }
+        public static Func<int[], int> Subtract { get; }
             = input => Add(input) * -1;
     }
 }

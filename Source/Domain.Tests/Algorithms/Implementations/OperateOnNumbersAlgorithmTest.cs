@@ -14,7 +14,7 @@ namespace Domain.Tests.Algorithms.Implementations
             // Act
             var actual = sut.Execute(input).Value;
             // Assert
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -26,7 +26,7 @@ namespace Domain.Tests.Algorithms.Implementations
             // Act
             var actual = sut.Execute(input).Value;
             // Assert
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -38,7 +38,7 @@ namespace Domain.Tests.Algorithms.Implementations
             // Act
             var actual = sut.Execute(input).Value;
             // Assert
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -50,7 +50,7 @@ namespace Domain.Tests.Algorithms.Implementations
             // Act
             var actual = sut.Execute(input).Value;
             // Assert
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -62,7 +62,7 @@ namespace Domain.Tests.Algorithms.Implementations
             // Act
             var actual = sut.Execute(input).Value;
             // Assert
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -74,7 +74,31 @@ namespace Domain.Tests.Algorithms.Implementations
             // Act
             var actual = sut.Execute(input).Value;
             // Assert
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void AddNumbersWithCenterDot_Returns_Correct_Value() {
+            // Arrange
+            var input = DiceSets.Create(4, 1, 3, 2, 4);
+            var expected = 4;
+            var sut = new AddNumbersWithCenterDotAlgorithm();
+            // Act
+            var actual = sut.Execute(input).Value;
+            // Assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void AddNumbersAroundCenterDot_Returns_Correct_Value() {
+            // Arrange
+            var input = DiceSets.Create(4, 1, 3, 2, 4);
+            var expected = 2;
+            var sut = new AddNumbersAroundCenterDotAlgorithm();
+            // Act
+            var actual = sut.Execute(input).Value;
+            // Assert
+            Assert.Equal(expected, actual);
         }
     }
 }
