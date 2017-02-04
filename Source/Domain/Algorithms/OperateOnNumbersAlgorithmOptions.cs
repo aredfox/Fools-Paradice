@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.Algorithms.Implementations.OperateOnNumbers
+namespace Domain.Algorithms
 {
     public class OperateOnNumbersAlgorithmOptions
     {

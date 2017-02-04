@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Domain.Algorithms.Implementations.OperateOnNumbers
+namespace Domain.Algorithms
 {
     public class Operators
     {

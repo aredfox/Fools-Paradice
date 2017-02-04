@@ -52,10 +52,11 @@
     <Compile Include="Algorithms\AlgorithmResult.cs" />
     <Compile Include="Algorithms\Implementations\OperateOnNumbers\AddEvenNumbersAlgorithm.cs" />
     <Compile Include="Algorithms\Implementations\OperateOnNumbers\AddOddNumbersAlgorithm.cs" />
-    <Compile Include="Algorithms\Implementations\OperateOnNumbers\OperateOnNumbersAlgorithm.cs" />
-    <Compile Include="Algorithms\Implementations\OperateOnNumbers\OperateOnNumbersAlgorithmOptions.cs" />
-    <Compile Include="Algorithms\Implementations\HighestNumberAlgorithm.cs" />
-    <Compile Include="Algorithms\Implementations\OperateOnNumbers\Operators.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\LowestNumberAlgorithm.cs" />
+    <Compile Include="Algorithms\OperateOnNumbersAlgorithm.cs" />
+    <Compile Include="Algorithms\OperateOnNumbersAlgorithmOptions.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\HighestNumberAlgorithm.cs" />
+    <Compile Include="Algorithms\Operators.cs" />
     <Compile Include="Algorithms\Implementations\OperateOnNumbers\SubtractEvenNumbersAlgorithm.cs" />
     <Compile Include="Algorithms\Implementations\OperateOnNumbers\SubtractOddNumbersAlgorithm.cs" />
     <Compile Include="Dice\Die.cs" />

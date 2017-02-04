@@ -6,6 +6,30 @@ namespace Domain.Tests.Algorithms.Implementations
     public class OperateOnNumbersAlgorithmTest
     {
         [Fact]
+        public void HighestNumber_Returns_Correct_Value() {
+            // Arrange
+            var input = DiceSets.Create(4, 1, 3, 2, 4);
+            var expected = 4;
+            var sut = new HighestNumberAlgorithm();
+            // Act
+            var actual = sut.Execute(input).Value;
+            // Assert
+            Assert.Equal(actual, expected);
+        }
+
+        [Fact]
+        public void LowesttNumber_Returns_Correct_Value() {
+            // Arrange
+            var input = DiceSets.Create(4, 1, 3, 2, 4);
+            var expected = 1;
+            var sut = new LowestNumberAlgorithm();
+            // Act
+            var actual = sut.Execute(input).Value;
+            // Assert
+            Assert.Equal(actual, expected);
+        }
+
+        [Fact]
         public void AddEvenNumbers_Returns_Correct_Value() {
             // Arrange
             var input = DiceSets.Create(4, 1, 3, 2, 4);
