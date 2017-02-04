@@ -50,7 +50,14 @@
     <Compile Include="Algorithms\Algorithm.cs" />
     <Compile Include="Algorithms\AlgorithmErrorResult.cs" />
     <Compile Include="Algorithms\AlgorithmResult.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\AddEvenNumbersAlgorithm.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\AddOddNumbersAlgorithm.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\OperateOnNumbersAlgorithm.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\OperateOnNumbersAlgorithmOptions.cs" />
     <Compile Include="Algorithms\Implementations\HighestNumberAlgorithm.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\Operators.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\SubtractEvenNumbersAlgorithm.cs" />
+    <Compile Include="Algorithms\Implementations\OperateOnNumbers\SubtractOddNumbersAlgorithm.cs" />
     <Compile Include="Dice\Die.cs" />
     <Compile Include="Dice\DieFace.cs" />
     <Compile Include="Dice\DieFaceGrids.cs" />

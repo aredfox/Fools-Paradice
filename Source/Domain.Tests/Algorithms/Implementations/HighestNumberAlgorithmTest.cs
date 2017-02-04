@@ -8,10 +8,7 @@ namespace Domain.Tests.Algorithms.Implementations
         [Fact]
         public void Returns_Highest_Number_From_Dice() {
             // Arrange
-            var input = new Die[] {
-                new Die(1), new Die(1), new Die(2),
-                new Die(5), new Die(3), new Die(4)
-            };
+            var input = DiceSets.Create(1, 5, 2, 2, 3);
             var expected = 5;
             var sut = new HighestNumberAlgorithm();
             // Act
