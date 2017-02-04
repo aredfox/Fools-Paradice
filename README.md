@@ -6,6 +6,7 @@
 A simple but compelling dice-based puzzle game.<br/>
 <br/>
 **How it works**<br/>
+
 1. The game selects a specific algorithm (puzzle).
 2. You either give the game 1 to 5 dice and examine it's output.
 3. Whenever you feel you've guessed the algorithm, the game will do three throws and you'll have to give the right answer.
