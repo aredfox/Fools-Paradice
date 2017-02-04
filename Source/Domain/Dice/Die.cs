@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kf.Core.Randomization;
+using System;
 using System.Linq;
 
 namespace Domain
@@ -9,23 +10,18 @@ namespace Domain
     public class Die
     {
         /// <summary>
-        /// Randomizer class shared for the Die object.
-        /// </summary>
-        private static Random _pseudoRandom = new Random();
-
-        /// <summary>
         /// Gets a random number between 1 and 6.
         /// </summary>
         /// <returns>An <see cref="int"/> between 1 and 6.</returns>
         private static int RollRandom() {
-            return _pseudoRandom.Next(1, 6);
+            return StaticRandom.Next(1, 6);
         }
 
         /// <summary>
         /// Creates a <see cref="Die"/> with a random value.
         /// </summary>
         public Die()
-            : this(_pseudoRandom.Next(1, 6)) { }
+            : this(StaticRandom.Next(1, 6)) { }
         /// <summary>
         /// Creates a die with a specific value.
         /// </summary>        

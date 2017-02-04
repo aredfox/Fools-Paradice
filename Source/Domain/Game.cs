@@ -8,7 +8,7 @@ namespace Domain
     /// <summary>
     /// Represents a single game.
     /// </summary>
-    public class Game<T>
+    public abstract class Game<T>
     {
         /// <summary>
         /// The algorithm currently being used.
@@ -26,6 +26,7 @@ namespace Domain
         /// Creates a new game.
         /// </summary>
         internal Game() {
+            Algorithm = SelectAlgorithm();
             _rounds = new List<Tuple<AlgorithmResult<T>, IEnumerable<Die>>>();
         }
 
@@ -39,6 +40,12 @@ namespace Domain
             SaveRound(result, dice);
             return result;
         }
+
+        /// <summary>
+        /// Selects an algorithm.
+        /// </summary>
+        /// <returns>An algorithm.</returns>
+        protected abstract Algorithm<T> SelectAlgorithm();
 
         /// <summary>
         /// Saves the round.
