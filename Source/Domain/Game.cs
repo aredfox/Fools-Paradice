@@ -45,7 +45,7 @@ namespace Domain
         /// Selects an algorithm.
         /// </summary>
         /// <returns>An algorithm.</returns>
-        protected abstract Algorithm<T> SelectAlgorithm();
+        protected internal abstract Algorithm<T> SelectAlgorithm();
 
         /// <summary>
         /// Saves the round.

@@ -68,6 +68,8 @@
     <Compile Include="Algorithms\Implementations\DiceSets.cs" />
     <Compile Include="Dice\DieFaceTests.cs" />
     <Compile Include="Dice\DieTests.cs" />
+    <Compile Include="GameTests.cs" />
+    <Compile Include="NumberGameTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
