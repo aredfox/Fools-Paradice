@@ -1,4 +1,5 @@
 ﻿using Infrastructure;
+using Kf.Core.Range;
 using System.Linq;
 using Xunit;
 
@@ -28,6 +29,22 @@ namespace Domain.Tests
                     // Assert
                     Assert.Equal(inRangeValue, new Die(inRangeValue).Value)
                 );
+        }
+
+        [Fact]
+        public void Roll_Returns_Value_Between_1_And_6() {
+            // Arrange
+            var expectedRange = new Int32Range(1, 6);
+            var sut = new Die();
+            // Act
+            Enumerable.Range(1, 100)
+                .ForEach(
+                    _ => {
+                        sut.Roll();
+                        // Assert
+                        Assert.True(expectedRange.IsInRange(sut.Value));
+                    }
+                );            
         }
     }
 }
