@@ -50,7 +50,7 @@
     <Compile Include="Algorithms\Algorithm.cs" />
     <Compile Include="Algorithms\AlgorithmErrorResult.cs" />
     <Compile Include="Algorithms\AlgorithmResult.cs" />
-    <Compile Include="Algorithms\HighestNumberAlgorithm.cs" />
+    <Compile Include="Algorithms\Implementations\HighestNumberAlgorithm.cs" />
     <Compile Include="Dice\Die.cs" />
     <Compile Include="Dice\DieFace.cs" />
     <Compile Include="Dice\DieFaceGrids.cs" />

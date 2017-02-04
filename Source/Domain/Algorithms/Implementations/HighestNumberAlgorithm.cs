@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Domain.Algorithms
+namespace Domain.Algorithms.Implementations
 {
     /// <summary>
     /// From a given set of dice it returns back the highest number.

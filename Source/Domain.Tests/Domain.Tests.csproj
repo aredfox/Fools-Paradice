@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\AlgorithmTests.cs" />
+    <Compile Include="Algorithms\Implementations\HighestNumberAlgorithmTest.cs" />
     <Compile Include="Dice\DieFaceTests.cs" />
     <Compile Include="Dice\DieTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
