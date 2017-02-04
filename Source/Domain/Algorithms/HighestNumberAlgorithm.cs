@@ -8,6 +8,8 @@ namespace Domain.Algorithms
     /// </summary>
     public class HighestNumberAlgorithm : Algorithm<int>
     {
+        public HighestNumberAlgorithm(int min = 1, int max = 6) : base(min, max) { }
+
         protected override AlgorithmResult<int> PerformAlgorithm(IEnumerable<Die> dice) {
             return new AlgorithmResult<int>(dice.Max(die => die.Value));
         }

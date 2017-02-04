@@ -21,7 +21,11 @@ namespace Domain.Algorithms
         /// </summary>
         /// <param name="min">Minimum dice the <see cref="Execute(IEnumerable{Die})"/> method can take.</param>
         /// <param name="max">Maximum dice the <see cref="Execute(IEnumerable{Die})"/> method can take.</param>
+        /// <exception cref="ArgumentOutOfRangeException">When <paramref name="min"/> is lower than 1.</exception>
         public Algorithm(int min = 1, int max = 6) {
+            if (min <= 0) {
+                throw new ArgumentOutOfRangeException(nameof(min), $"Parameter {nameof(min)} needs to be at least 1 or higher.");
+            }
             DiceRange = new Int32Range(min, max);
         }
 
