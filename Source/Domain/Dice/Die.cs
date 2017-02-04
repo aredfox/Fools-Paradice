@@ -11,21 +11,21 @@ namespace Domain
         /// <summary>
         /// Randomizer class shared for the Die object.
         /// </summary>
-        private static Random PseudoRandom = new Random();
+        private static Random _pseudoRandom = new Random();
 
         /// <summary>
         /// Gets a random number between 1 and 6.
         /// </summary>
         /// <returns>An <see cref="int"/> between 1 and 6.</returns>
         private static int RollRandom() {
-            return PseudoRandom.Next(1, 6);
+            return _pseudoRandom.Next(1, 6);
         }
 
         /// <summary>
         /// Creates a <see cref="Die"/> with a random value.
         /// </summary>
         public Die()
-            : this(PseudoRandom.Next(1, 6)) { }
+            : this(_pseudoRandom.Next(1, 6)) { }
         /// <summary>
         /// Creates a die with a specific value.
         /// </summary>        
