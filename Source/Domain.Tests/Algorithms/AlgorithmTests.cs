@@ -10,7 +10,7 @@ namespace Domain.Tests.Algorithms
     {
         class TestInt32Algorithm : Algorithm<int>
         {
-            public TestInt32Algorithm(int min = 1, int max = 6) : base(min, max) { }
+            public TestInt32Algorithm(int min = 1, int max = 5) : base(min, max) { }
 
             protected override AlgorithmResult<int> PerformAlgorithm(IEnumerable<Die> dice) {
                 return new AlgorithmResult<int>(0);
@@ -37,7 +37,7 @@ namespace Domain.Tests.Algorithms
         [Fact]
         public void Returns_AlgorithmErrorResult_When_Input_Is_Null() {
             // Arrange
-            var expected = new AlgorithmErrorResult<int>("Amount of dice is 0, expected to be between 1 and 6.");
+            var expected = new AlgorithmErrorResult<int>("Amount of dice is 0, expected to be between 1 and 5.");
             // Act
             var sut = new TestInt32Algorithm();
             var actual = sut.Execute(null);
