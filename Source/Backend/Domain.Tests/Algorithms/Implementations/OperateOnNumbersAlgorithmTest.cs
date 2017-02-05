@@ -1,4 +1,5 @@
 ﻿using Domain.Algorithms.Implementations.OperateOnNumbers;
+using Domain.Dice;
 using Xunit;
 
 namespace Domain.Tests.Algorithms.Implementations

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Domain.Tests.Algorithms.Implementations
+namespace Domain.Dice
 {
     public static class DiceSets
     {
