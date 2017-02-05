@@ -12,7 +12,24 @@ A simple but compelling dice-based puzzle game.<br/>
 3. Whenever you feel you've guessed the algorithm, the game will do three throws and you'll have to give the right answer.
 
 **So when can I play?**<br/>
-A simple answer: #WorkInProgress #AfterHours #CodeForFun #WhenerItIsReady
+A simple answer: #WorkInProgress #AfterHours #CodeForFun #WheneverItIsReady
+
+**Todo**<br/>
+Feel free to help out <a href="mailto:ys@delegate-it.be>ys@delegate-it.be</a>, do a PR or post an issue!<br/>
+- [x] Backend
+  - [x] Tests
+  - [x] Domain
+- [x] Fronted
+  - [x] WPF Test Client   
+  - [ ] MVC Client
+  - [ ] ASP.Net Core SPA
+  - [ ] Electron w/ EdgeJS
+  - [ ] Xamarin Mobile
+  - [ ] IoT Device or Box
+  - [ ] ... every other crazy idea is welcome!
+- [ ] UI/Design
+  - [ ] Theme and graphic concept
+  - [ ] Asset creation
 
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
 <p style="color: #000 !important"></p>
