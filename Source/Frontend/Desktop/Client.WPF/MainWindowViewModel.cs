@@ -28,6 +28,7 @@ namespace Client.WPF
 
         public string AlgorithmInput { get; set; } = "Your Input: ?";
         public string AlgorithmOutput { get; set; } = "Output: ?";
+        public string AlgorithmName { get; set; } = Context.Game.Algorithm.GetType().Name;
 
         public string NextRoundButtonTitle => "Next Round";
 
@@ -38,6 +39,18 @@ namespace Client.WPF
                     var result = Context.Game.Round(input);
                     AlgorithmOutput = $"Output: {(result.HasError ? result.ErrorMessage : result.Value.ToString())}";
                     RaisePropertyChanged(nameof(AlgorithmOutput));
+                },
+                canExecute: _ => true
+            );
+
+        public ICommand NewGameCommand =>
+            new RelayCommand(
+                execute: _ => {
+                    Context.Game = new Domain.NumberGame();
+                    RaisePropertyChanged(nameof(AlgorithmOutput));
+                    RaisePropertyChanged(nameof(Title));
+                    AlgorithmName = Context.Game.Algorithm.GetType().Name;
+                    RaisePropertyChanged(nameof(AlgorithmName));
                 },
                 canExecute: _ => true
             );

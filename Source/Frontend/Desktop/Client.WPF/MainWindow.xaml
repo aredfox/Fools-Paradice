@@ -18,8 +18,12 @@
         <Slider x:Name="slider5" Minimum="0" Maximum="5" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider5_ValueChanged"/>
 
         <Button x:Name="uxNextRound" 
-            Content="{Binding NextRoundButtonTitle}" Command="{Binding NextRoundCommand}" Margin="563,78,13,75" IsDefault="True"
+            Content="{Binding NextRoundButtonTitle}" Command="{Binding NextRoundCommand}" Margin="563,78,13,121" IsDefault="True"
         />
-        <Label x:Name="label_Copy" Content="{Binding AlgorithmOutput}" HorizontalAlignment="Left" Margin="10,192,0,10" Width="740"/>
+        <Label x:Name="label_Copy" Content="{Binding AlgorithmOutput}" HorizontalAlignment="Left" Margin="10,192,0,10" Width="399"/>
+        <Label x:Name="label_Copy1" Content="{Binding AlgorithmName}" HorizontalAlignment="Left" Margin="438,192,0,10" Width="312"/>
+        <Button x:Name="uxNextRound_Copy" 
+            Content="New Game" Command="{Binding NewGameCommand}" Margin="563,145,13,75" IsDefault="True"
+        />
     </Grid>
 </Controls:MetroWindow>
