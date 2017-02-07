@@ -11,11 +11,11 @@
         Title="{Binding Title}" Width="{Binding Width}" Height="291.656">
     <Grid>
         <Label x:Name="label" Content="{Binding AlgorithmInput}" HorizontalAlignment="Left" Margin="10,10,0,188" Width="740"/>
-        <Slider x:Name="slider1" Minimum="0" Maximum="5" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider1_ValueChanged"/>
-        <Slider x:Name="slider2" Minimum="0" Maximum="5" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider2_ValueChanged"/>
-        <Slider x:Name="slider3" Minimum="0" Maximum="5" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider3_ValueChanged"/>
-        <Slider x:Name="slider4" Minimum="0" Maximum="5" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider4_ValueChanged"/>
-        <Slider x:Name="slider5" Minimum="0" Maximum="5" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider5_ValueChanged"/>
+        <Slider x:Name="slider1" Minimum="0" Maximum="6" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider1_ValueChanged"/>
+        <Slider x:Name="slider2" Minimum="0" Maximum="6" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider2_ValueChanged"/>
+        <Slider x:Name="slider3" Minimum="0" Maximum="6" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider3_ValueChanged"/>
+        <Slider x:Name="slider4" Minimum="0" Maximum="6" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider4_ValueChanged"/>
+        <Slider x:Name="slider5" Minimum="0" Maximum="6" SmallChange="1" LargeChange="1" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="537" TickPlacement="TopLeft" ValueChanged="slider5_ValueChanged"/>
 
         <Button x:Name="uxNextRound" 
             Content="{Binding NextRoundButtonTitle}" Command="{Binding NextRoundCommand}" Margin="563,78,13,121" IsDefault="True"
