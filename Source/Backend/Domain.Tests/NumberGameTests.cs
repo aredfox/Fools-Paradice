@@ -30,7 +30,7 @@ namespace Domain.Tests
                     // Act                    
                     var actual = sut.SelectAlgorithm();
                     // Assert
-                    Assert.True(actual != null, "Returned null, expected an object.");
+                    Assert.NotNull(actual);
                     Assert.IsAssignableFrom<Algorithm<int>>(actual);
                 }
             );
