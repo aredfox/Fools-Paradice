@@ -4,6 +4,7 @@ using Xunit;
 
 namespace Domain.Tests
 {
+    [Trait("Category", "Die")]
     public class DieFaceTests
     {
         [Fact]

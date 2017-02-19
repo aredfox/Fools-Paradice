@@ -6,6 +6,7 @@ using Xunit;
 
 namespace Domain.Tests.Algorithms
 {
+    [Trait("Category", "Algorithms")]
     public class AlgorithmTests
     {
         class TestInt32Algorithm : Algorithm<int>

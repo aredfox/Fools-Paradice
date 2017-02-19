@@ -4,6 +4,7 @@ using Xunit;
 
 namespace Domain.Tests.Algorithms.Implementations
 {
+    [Trait("Category", "Algorithms")]
     public class OperateOnNumbersAlgorithmTest
     {
         [Fact]
